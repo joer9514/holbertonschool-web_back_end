@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""Return key"""
 from typing import Union, Any, Mapping, T
 
 
