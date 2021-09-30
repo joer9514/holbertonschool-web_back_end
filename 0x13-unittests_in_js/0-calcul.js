@@ -1,9 +1,6 @@
-function calculateNumber(a, b) {
-  if (typeof a === 'number' && typeof b === 'number') {
-    a = Math.round(a);
-    b = Math.round(b);
-    return a + b;
-  }
+function calculateNumber (a, b) {
+  if (isNaN(a) || isNaN(b)) throw new TypeError();
+  return Math.round(a) + Math.round(b);
 }
 
 module.exports = calculateNumber;
